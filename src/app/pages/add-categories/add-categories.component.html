@@ -1,0 +1,18 @@
+<div class="card shadow mb-4">
+  <div class="card-header py-3">
+    <h6 class="m-0 font-weight-bold text-primary">Ajouter une categorie</h6>
+  </div>
+    <div class="card-body">
+      <form [formGroup]="categoryForm" (submit)="add()">
+        <div class="form-group">
+          <label for="categorieName">Nom</label>
+          <input type="text" class="form-control" id="categorieName" placeholder="Entrer un nom" formControlName="title">
+        </div>
+        <div class="form-group">
+          <label for="description">Description</label>
+          <textarea type="text" class="form-control" id="description" placeholder="Entrer une description" formControlName="description"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Créer</button>
+    </form>
+    </div>
+</div>

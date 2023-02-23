@@ -11,6 +11,9 @@ import { MainComponent } from './layout/main/main.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { NavbarComponent } from './layout/navbar/navbar.component';
 import { CategoriesComponent } from './pages/categories/categories.component';
+import { ArticlesComponent } from './pages/articles/articles.component';
+import { AddCategoriesComponent } from './pages/add-categories/add-categories.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,12 +25,15 @@ import { CategoriesComponent } from './pages/categories/categories.component';
     MainComponent,
     FooterComponent,
     NavbarComponent,
-    CategoriesComponent
+    CategoriesComponent,
+    ArticlesComponent,
+    AddCategoriesComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
